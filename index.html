@@ -4,89 +4,96 @@
 	<meta charset="UTF-8">
 	<title>Catalogo Etiquetas</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
-	<h1>Titulo de nivel 1</h1>
-	<h2>Titulo de nivel 2</h2>
-	<h3>Titulo de nivel 3</h3>
-	<h4>Titulo de nivel 4</h4>
-	<h5>Titulo de nivel 5</h5>
-	<h6>Titulo de nivel 6</h6>
-	<hr> <!-- Esto es una línea separadora -->
-	<br> <!-- Esto es un salto de línea -->
-	<p>Lorem <span style="color: red;">ipsum dolor</span> sit amet, consectetur adipisicing elit. Exercitationem reiciendis minima quaerat consectetur, veniam vel, nemo nisi? Quos itaque cumque consequatur unde voluptatibus quidem. Consectetur quasi cupiditate corporis dolorem nemo.</p>
-	<a href="http://google.com">Google</a>
-	<div>
-		<p>Soy un párrafo adentro de una div</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1>Titulo de nivel 1</h1>
+				<h2>Titulo de nivel 2</h2>
+				<h3>Titulo de nivel 3</h3>
+				<h4>Titulo de nivel 4</h4>
+				<h5>Titulo de nivel 5</h5>
+				<h6>Titulo de nivel 6</h6>
+				<hr> <!-- Esto es una línea separadora -->
+				<br> <!-- Esto es un salto de línea -->
+				<p>Lorem <span style="color: red;">ipsum dolor</span> sit amet, consectetur adipisicing elit. Exercitationem reiciendis minima quaerat consectetur, veniam vel, nemo nisi? Quos itaque cumque consequatur unde voluptatibus quidem. Consectetur quasi cupiditate corporis dolorem nemo.</p>
+				<a href="http://google.com">Google</a>
+				<div>
+					<p>Soy un párrafo adentro de una div</p>
+				</div>
+				<img src="http://placehold.it/256" alt="Imagen de prueba">
+				<hr>
+				<h1>Listas</h1>
+				<ol>
+					<li>Carlos Ruiz</li>
+					<li>Yesenia Navarro</li>
+					<li>Majo Luna</li>
+					<li>Alan Abundis</li>
+					<li>Ricardo Cruz</li>
+				</ol>
+				<ul>
+					<li>Carlos Ruiz</li>
+					<li>Yesenia Navarro</li>
+					<li>Majo Luna</li>
+					<li>Alan Abundis</li>
+					<li>Ricardo Cruz</li>
+				</ul>
+				<hr>
+				<h1>Tablas</h1>
+				<table border="1">
+					<tr>
+						<th>Nombre</th>
+						<th>Edad</th>
+					</tr>
+					<tr>
+						<td>Carlos Ruiz</td>
+						<td>23</td>
+					</tr>
+					<tr>
+						<td>Yesi Navarro</td>
+						<td>22</td>
+					</tr>
+					<tr>
+						<td>Alan Abundis</td>
+						<td>23</td>
+					</tr>
+					<tr>
+						<td>Majo Luna</td>
+						<td>28</td>
+					</tr>
+					<tr>
+						<td>Ricardo Cruz</td>
+						<td>33</td>
+					</tr>
+				</table>
+				<hr>
+				<h1>Formularios</h1>
+				<form action="">
+					<input required type="text" name="name" placeholder="Nombre"> <br>
+					<input required type="email" name="email" placeholder="Email"> <br>
+					<input type="number" name="age" placeholder="Edad"> <br>
+					<input type="phone" name="phone" placeholder="Teléfono"> <br>
+					<h4>Sexo</h4>
+					<input required type="radio" value="H" name="sex">Hombre <br>
+					<input required type="radio" value="M" name="sex">Mujer <br>
+					<h4>Tienes:</h4>
+					<input type="checkbox" value="mom" name="family">Mamá <br>
+					<input type="checkbox" value="dad" name="family">Papá <br>
+					<input type="checkbox" value="bros" name="family">Hermanos <br>
+					<h4>Ocupación</h4>
+					<select required name="occupation">
+						<option value="">Seleccionar...</option>
+						<option value="ti">Informático</option>
+						<option value="mktg">Marketing</option>
+						<option value="sales">Ventas</option>
+						<option value="hr">RRHH</option>
+					</select>
+					<input type="submit">
+				</form>
+			</div>
+		</div>
 	</div>
-	<img src="http://placehold.it/256" alt="Imagen de prueba">
-	<hr>
-	<h1>Listas</h1>
-	<ol>
-		<li>Carlos Ruiz</li>
-		<li>Yesenia Navarro</li>
-		<li>Majo Luna</li>
-		<li>Alan Abundis</li>
-		<li>Ricardo Cruz</li>
-	</ol>
-	<ul>
-		<li>Carlos Ruiz</li>
-		<li>Yesenia Navarro</li>
-		<li>Majo Luna</li>
-		<li>Alan Abundis</li>
-		<li>Ricardo Cruz</li>
-	</ul>
-	<hr>
-	<h1>Tablas</h1>
-	<table border="1">
-		<tr>
-			<th>Nombre</th>
-			<th>Edad</th>
-		</tr>
-		<tr>
-			<td>Carlos Ruiz</td>
-			<td>23</td>
-		</tr>
-		<tr>
-			<td>Yesi Navarro</td>
-			<td>22</td>
-		</tr>
-		<tr>
-			<td>Alan Abundis</td>
-			<td>23</td>
-		</tr>
-		<tr>
-			<td>Majo Luna</td>
-			<td>28</td>
-		</tr>
-		<tr>
-			<td>Ricardo Cruz</td>
-			<td>33</td>
-		</tr>
-	</table>
-	<hr>
-	<h1>Formularios</h1>
-	<form action="">
-		<input required type="text" name="name" placeholder="Nombre"> <br>
-		<input required type="email" name="email" placeholder="Email"> <br>
-		<input type="number" name="age" placeholder="Edad"> <br>
-		<input type="phone" name="phone" placeholder="Teléfono"> <br>
-		<h4>Sexo</h4>
-		<input required type="radio" value="H" name="sex">Hombre <br>
-		<input required type="radio" value="M" name="sex">Mujer <br>
-		<h4>Tienes:</h4>
-		<input type="checkbox" value="mom" name="family">Mamá <br>
-		<input type="checkbox" value="dad" name="family">Papá <br>
-		<input type="checkbox" value="bros" name="family">Hermanos <br>
-		<h4>Ocupación</h4>
-		<select required name="occupation">
-			<option value="">Seleccionar...</option>
-			<option value="ti">Informático</option>
-			<option value="mktg">Marketing</option>
-			<option value="sales">Ventas</option>
-			<option value="hr">RRHH</option>
-		</select>
-		<input type="submit">
-	</form>
 </body>
 </html>
